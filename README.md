@@ -27,6 +27,13 @@ pip install -r requirements.txt
 All required files except images are already in data directory.
 If you generate CSV files (duplicate image list, split, leak.. ), original files are overwritten. The contents will be changed, but It's not a problem.
 
+### Download Official Image
+Download and extract *training_data*, *testing_data*, and *training_labels.csv*.
+If the Kaggle API is installed, run following command.
+```
+$ kaggle competitions download -c cs-t0828-2020-hw1
+```
+
 ### Prepare Images
 After downloading and converting images, the data directory is structured as:
 ```
@@ -35,13 +42,6 @@ root_dir
   +- testing_data
   +- training_labels.csv
   +- src
-```
-
-#### Download Official Image
-Download and extract *training_data*, *testing_data*, and *training_labels.csv*.
-If the Kaggle API is installed, run following command.
-```
-$ kaggle competitions download -c cs-t0828-2020-hw1
 ```
 
 ## Configuration
