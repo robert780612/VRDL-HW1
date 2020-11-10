@@ -70,3 +70,8 @@ Following command will ensemble of all models and make submissions.
 ```
 $ kaggle competitions submit -c cs-t0828-2020-hw1 -f predictions.csv -m "Message"
 ```
+
+## Reference
+This repository is folked from [WS-DAN.PyTorch](https://github.com/GuYuc/WS-DAN.PyTorch)
+
+
