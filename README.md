@@ -44,6 +44,9 @@ If the Kaggle API is installed, run following command.
 $ kaggle competitions download -c cs-t0828-2020-hw1
 ```
 
+## Configuration
+Set the configuration in the *config.py* (Model config, Dataset config...)
+
 ## Training
 To train models, run following commands.
 ```
@@ -56,18 +59,11 @@ Model | GPUs | Image size | Training Epochs | Training Time
 ------------ | ------------- | ------------- | ------------- | -------------
 inception-v3 | 1x 1080ti | 224 | 16 | 6 hours
 
-
 ## Inference
 If trained weights are prepared, you can create files that contains class probabilities of images.
 ```
 $ python eval.py
 ```
-To make submission, you must inference test and test_val splits. For example:
-```
-$ python inference.py --config=configs/resnet34.0.policy.yml --num_tta=8 --output=inferences/resnet34.0.test_val.csv --split=test_val
-$ python inference.py --config=configs/resnet34.0.policy.yml --num_tta=8 --output=inferences/resnet34.0.test.csv --split=test
-```
-To inference all models, simply run `sh inference.sh`
 
 ## Make Submission
 Following command will ensemble of all models and make submissions.
